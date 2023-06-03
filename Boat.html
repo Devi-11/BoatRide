@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: white;
+      }
+      div {
+        margin: 24px;
+        background-color: blueviolet;
+        /* background-size: cover; */
+        border-radius: 4px solid black;
+        padding-top: 3px;
+        /* width: 10; */
+        padding-bottom: 30px;
+      }
+      /* table {
+        margin: auto;
+        border-radius: 2px solid black;
+        border-radius: 7px; */
+      /* } */
+      form,
+      td {
+        border: 2px solid white;
+        border-radius: 6px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        background-color: limegreen;
+      }
+      button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" onsubmit="calculatebill()">
+      <center>
+        <div>
+        
+            <table>
+              <h2>Boat Ride Bill Automation</h2>
+              <tr>
+                <td>Customer Name</td>
+                <td>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Customer Name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Phone Number</td>
+                <td>
+                  <input type="number" id="" placeholder="Phone Number" />
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td><input type="email" id="" placeholder="Email" /></td>
+              </tr>
+              <tr>
+                <td>Number of Persons</td>
+                <td>
+                  <input
+                    type="number"
+                    id="persons"
+                    placeholder="Number Of Persons"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Boat Type</td>
+                <td>
+                  <select value="boatType" id="type" placeholder="select">
+                    <option value="2">
+                      2 Seater Pedal Boat
+                    </option>
+                    <option value="4">
+                      4Seater Pedal Boat
+                    </option>
+                    <option value="8">
+                      8 Seater Pedal Boat
+                    </option>
+                    <option value="15">
+                      15 Seater Pedal Boat
+                    </option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Travel Duration in Hour</td>
+                <td><input type="number" id="duration" /></td>
+              </tr>
+            </table>
+          </form>
+          <button type="submit">Book Ride</button>
+        </div>
+        <p id="result"></p>
+      </center>
+      </form>
+    <script src="Boatbill.js"></script>
+  </body>
+</html>
